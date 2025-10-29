@@ -31,10 +31,10 @@ My machine learning techniques implement the use of TF-IDF (Term Frequency - Inv
 
 # App Production Visualization
 
-<img src="https://github.com/Shubham-bhatiaa/job_recommendation/assets/40693511/a7e38fa1-e4c6-4288-a2e5-fd6dfb18ed17" alt="app_production" width="800" height="800">
+<img src="https://github.com/BrianTruong23/job_recommendation/assets/40693511/a7e38fa1-e4c6-4288-a2e5-fd6dfb18ed17" alt="app_production" width="800" height="800">
 
 # Demo 
-<img width="736" alt="demo" src="https://github.com/Shubham-bhatiaa/job_recommendation/assets/40693511/d2b04098-66c6-4859-8771-625da8549385">
+<img width="736" alt="demo" src="https://github.com/BrianTruong23/job_recommendation/assets/40693511/d2b04098-66c6-4859-8771-625da8549385">
 
 # Testing 
 
