@@ -45,7 +45,7 @@ def main():
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     # Set the title of your app
     st.title('Internship Recommendations Based On Resume')
-    st.markdown("**Author: Shubham Bhatia and Sumanyu Seth**")
+    st.markdown("**Author: Shubham Bhatia**")
     st.markdown("[GitHub Repository](https://github.com/Shubham-bhatiaa/job_recommendation)")
     # Write a short description
     st.markdown("""
