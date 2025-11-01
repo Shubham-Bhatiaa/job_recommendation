@@ -15,9 +15,9 @@ from io import BytesIO
 
 # POS TAG AND Word Lemmatizer
 
-#{ Part-of-speech constants
+# { Part-of-speech constants
 ADJ, ADJ_SAT, ADV, NOUN, VERB = 'a', 's', 'r', 'n', 'v'
-#}
+# }
 POS_LIST = [NOUN, VERB, ADJ, ADV]
 
 NUM_POSTING = 50
@@ -33,13 +33,14 @@ def main():
     Returns:
     None
     """
-
+    nltk.download("punkt_tab")
     nltk.download('punkt')
     nltk.download('averaged_perceptron_tagger')
     nltk.download('wordnet')
     nltk.download('stopwords')
 
-    # Add CSS Style 
+
+    # Add CSS Style
     with open('style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     # Set the title of your app
@@ -65,7 +66,7 @@ def main():
         job_df = get_job_df()
         df_resume_sorted = post_process_table(resume, job_df)
         display_features_slider(resume, job_df)
-         # Create a button for exporting to CSV
+        # Create a button for exporting to CSV
         download_csv(df_resume_sorted)
         st.write(df_resume_sorted.to_html(escape=False), unsafe_allow_html=True)
 
@@ -162,7 +163,6 @@ def post_process_table(uploaded_file, job_df):
     return df_resume_sorted
 
 
-
 def make_clickable(link):
     """
     Create a clickable HTML link.
@@ -247,7 +247,6 @@ def keep_alpha_char(text):
     return cleaned_string
 
 
-
 def nltk_pos_tagger(nltk_tag):
     """
     Map NLTK POS tags to WordNet POS tags.
@@ -270,7 +269,6 @@ def nltk_pos_tagger(nltk_tag):
         return None
 
 
-    
 def lemmatize_sentence(sentence):
     """
     Lemmatize the words in the input sentence.
@@ -323,7 +321,6 @@ def remove_stop_words(text):
     filtered_text = ' '.join(filtered_words)
 
     return filtered_text
-
 
 
 def recommend_job(resume_text, tfidf_matrix, tfidf_vectorizer, df):
