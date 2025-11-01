@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from PyPDF2 import PdfReader
+from pypdf import PdfReader
 import re
 import nltk
 from nltk.stem import WordNetLemmatizer
