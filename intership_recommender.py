@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from pypdf import PdfReader
+import pdfplumber
 import re
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -189,7 +189,7 @@ def read_pdf(pdf_file):
     """
     # Get pdf file 
     # Return text of the resume
-    reader = PdfReader(pdf_file)
+    reader = pdfplumber.open(pdf_file)
     # number_of_pages = len(reader.pages)
     page = reader.pages[0]
     resume = page.extract_text()
